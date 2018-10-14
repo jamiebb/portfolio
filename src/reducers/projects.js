@@ -4,7 +4,7 @@ export const projects = (state=[], action) => {
             return [
                 {
                     title: 'eStore',
-                    image: '../files/estore.jpg',
+                    image: './files/estore.jpg',
                     link: 'https://jamiebb.github.io/ecommerce/',
                     description: `This is a mockup of an eCommerce site. I browsed features 
                     on Amazon and integrated them into this site. These include viewing recent 
@@ -15,7 +15,7 @@ export const projects = (state=[], action) => {
                 },
                 {
                     title: 'Canvas Chrome Extension',
-                    image: '../files/chrome_extension.png',
+                    image: './files/chrome_extension.png',
                     link: 'https://vimeo.com/jamieburton/canvas',
                     description: `This is a Chrome Extension for a learning management system, 
                     Canvas, which is used to create online courses. I developed it while 
@@ -26,7 +26,7 @@ export const projects = (state=[], action) => {
                 },
                 {
                     title: 'Career Consulting',
-                    image: '../files/career_consulting.jpg',
+                    image: './files/career_consulting.jpg',
                     link: 'https://github.com/jamiebb/career-consulting-node',
                     description: `This is a website that I designed and developed for a career 
                     consultant. I collaborated with her and another designer on what would look  
@@ -36,7 +36,7 @@ export const projects = (state=[], action) => {
                 },
                 {
                     title: 'Code Blocks',
-                    image: '../files/code_blocks.jpg',
+                    image: './files/code_blocks.jpg',
                     link: 'https://github.com/jamiebb/codeblocks',
                     description: `This is a game that I designed to help new coders learn 
                     about front end development with HTML, CSS, and JavaScript. It can be played 

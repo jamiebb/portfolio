@@ -24,13 +24,13 @@ class Projects extends Component {
                         if (project.title === this.state.currentProject) {
                             return (
                                 <div className='ProjectSmall' key={`${project.title}-small-image`}>
-                                    <img className='selected' src={`${project.image}`} alt={`${project.title}-small`} title={`${project.title}`} />
+                                    <img className='selected' src={`${project.image}`} alt={`${project.title} small`} title={`${project.title}`} />
                                 </div>
                             )
                         } else {
                             return (
                                 <div className='ProjectSmall' key={`${project.title}-small-image`}>
-                                    <img src={`${project.image}`} alt={`${project.title}-small`} title={`${project.title}`}
+                                    <img src={`${project.image}`} alt={`${project.title} small`} title={`${project.title}`}
                                     onClick={() => {
                                         this.setState({ currentProject: project.title })
                                         document.querySelectorAll('.NavigationLinks a')[2].click();
