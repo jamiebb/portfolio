@@ -7,9 +7,9 @@ function AboutMe(props) {
             <div className='AboutMeContent'>
                 <img alt='Jamie' src='./files/jamie.jpg'/>
                 <p> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu malesuada dui, vel laoreet lorem. 
-                    Aenean vestibulum, lacus quis finibus molestie, elit nisl commodo odio, nec pretium sapien ligula et 
-                    ante.
+                    After beginning my career in film and television, I decided that I wanted to be a front end developer and enrolled 
+                    in a coding boot camp a few years ago. Ever since, I have used my creative background and coding skills to make 
+                    dynamic, compelling websites.  
                 </p>
             </div>
         </div>
