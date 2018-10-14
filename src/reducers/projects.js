@@ -27,7 +27,7 @@ export const projects = (state=[], action) => {
                 {
                     title: 'Career Consulting',
                     image: './files/career_consulting.jpg',
-                    link: 'https://github.com/jamiebb/career-consulting-node',
+                    link: 'https://career-consulting.herokuapp.com/',
                     description: `This is a website that I designed and developed for a career 
                     consultant. I collaborated with her and another designer on what would look  
                     best to prospective clients.`,
@@ -37,7 +37,7 @@ export const projects = (state=[], action) => {
                 {
                     title: 'Code Blocks',
                     image: './files/code_blocks.jpg',
-                    link: 'https://github.com/jamiebb/codeblocks',
+                    link: 'https://jamiebb.github.io/codeblocks/',
                     description: `This is a game that I designed to help new coders learn 
                     about front end development with HTML, CSS, and JavaScript. It can be played 
                     alone or against one other person. At the end of the game, links are provided 
