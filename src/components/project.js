@@ -19,7 +19,6 @@ function Project(props) {
                     <img className='ProjectCodeImage GitHub' title='GitHub' alt={`${props.project.title}-github`} src='./files/github.png' />
                 </a>
             </div>
-            {!props.project.last && <div className='projectDividingLine' />}
         </div>
     )
 }

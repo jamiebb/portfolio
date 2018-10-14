@@ -6,28 +6,40 @@ class Projects extends Component {
     constructor(props) {
         super(props);
 
-        this.state = { current: 'eStore'};
+        this.state = { currentProject: 'eStore'};
     }
 
     render() {
+        let currentProject = this.props.projects.filter((project, i) => {
+            return project.title === this.state.currentProject;
+        })
 
-        
         return (
             <div id='Projects' className='Projects'>
                 <h2> Projects </h2>
-                {/* {this.props.projects.map((project) => {
-                    return <img src={`${project.image}`} style={width: '50%'; float: 'left';}/>
-                })} */}
-                
-                {this.props.projects.map((project, i) => {
-                    project.last = false;
+                <Project key={`project-${this.state.currentProject}`} project={currentProject[0]} />
 
-                    if (this.props.projects.length === i + 1) {
-                        project.last = true;
-                    }
-                    
-                    return <Project key={`project-${project.title}`} project={project} />
-                })}
+                                <div className='ProjectsSmall'>
+                    {this.props.projects.map((project) => {
+                        if (project.title === this.state.currentProject) {
+                            return (
+                                <div className='ProjectSmall' key={`${project.title}-small-image`}>
+                                    <img className='selected' src={`${project.image}`} alt={`${project.title}-small`} />
+                                </div>
+                            )
+                        } else {
+                            return (
+                                <div className='ProjectSmall' key={`${project.title}-small-image`}>
+                                    <img src={`${project.image}`} alt={`${project.title}-small`} 
+                                    onClick={() => {
+                                        this.setState({ currentProject: project.title })
+                                        document.querySelectorAll('.NavigationLinks a')[2].click();
+                                    }} />
+                                </div>
+                            )
+                        }
+                    })}
+                </div>
             </div>
         )
     }

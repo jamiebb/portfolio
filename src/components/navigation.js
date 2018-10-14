@@ -16,12 +16,12 @@ class Navigation extends Component {
     }
 
     handleScroll() {
-        console.log('scroll')
         var navbar = document.querySelector('.Navigation');
 
         if (window.scrollY > 0) {
-          this.setState({ scrollingLock: true });
           navbar.classList.add('sticky');
+        } else {
+            navbar.classList.remove('sticky');
         }
       }
 

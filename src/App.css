@@ -179,7 +179,7 @@ h2 {
     cursor: pointer;
     border: 1px solid #231F20;
     border-radius: .15em;
-    margin-bottom: 3em;
+    margin-bottom: 1.5em;
 }
 
 .Project h3 {
@@ -211,8 +211,28 @@ h2 {
 
 .GitHub {
     width: 1.75em;
-    margin-left: .25em;
+    margin-left: .5em;
     cursor: pointer;
+}
+
+.ProjectsSmall {
+    overflow: auto;
+    margin-top: 5em;
+}
+
+.ProjectSmall {
+    float: left;
+    width: 25%;
+}
+
+.ProjectSmall img {
+    width: 80%;
+    cursor: pointer;
+    border-radius: .15em;
+}
+
+.selected {
+    border: 1px solid #231F20;
 }
 
 /* CONTACT */
