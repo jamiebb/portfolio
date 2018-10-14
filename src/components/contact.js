@@ -10,13 +10,13 @@ function Contact(props) {
             </p>
             <div className='ContactEmail'>
                 <h3> Email </h3>
-                <p> <a href='mailto:hello@jamiebb.com' target='_top'> hello@jamiebb.com </a> </p>
+                <p> <a href='mailto:hello@jamiebb.com' target='_top' title='Email hello@jamiebb.com'> hello@jamiebb.com </a> </p>
             </div>
             <div className='ContactSocial'>
                 <h3> Online At </h3>
-                <a href='https://vimeo.com/jamieburton' target='_blank' rel="noopener noreferrer"> <img title='Vimeo' alt='Vimeo icon' src='./files/vimeo.png' /> </a>
-                <a href='https://github.com/jamiebb' target='_blank' rel="noopener noreferrer"> <img title='GitHub' alt='GitHub icon' src='./files/github.png' /> </a>
-                <a href='https://www.linkedin.com/in/burtonjamie/' target='_blank' rel="noopener noreferrer">  <img title='LinkedIn' alt='LinkedIn icon' src='./files/linkedin.png' /> </a>
+                <a href='https://vimeo.com/jamieburton' target='_blank' rel="noopener noreferrer"> <img title='Vimeo Link' alt='Vimeo icon' src='./files/vimeo.png' /> </a>
+                <a href='https://github.com/jamiebb' target='_blank' rel="noopener noreferrer"> <img title='GitHub Link' alt='GitHub icon' src='./files/github.png' /> </a>
+                <a href='https://www.linkedin.com/in/burtonjamie/' target='_blank' rel="noopener noreferrer">  <img title='LinkedIn Link' alt='LinkedIn icon' src='./files/linkedin.png' /> </a>
             </div>
         </div>
     )
