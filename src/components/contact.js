@@ -2,20 +2,21 @@ import React from 'react'
 
 function Contact(props) {
     return (
-        <div className='Contact'>
+        <div id='Contact' className='Contact'>
             <h2> Contact </h2>
             <p> 
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
-                laoreet dolore magna aliquam 
+                Feel free to contact me via email or LinkedIn for more project samples or 
+                information. 
             </p>
             <div className='ContactEmail'>
                 <h3> Email </h3>
-                <p> hello@jamiebb.com </p>
+                <p> <a href='mailto:hello@jamiebb.com' target='_top'> hello@jamiebb.com </a> </p>
             </div>
             <div className='ContactSocial'>
-                <h3> Social </h3>
-                <p> GitHub </p>
-                <img alt='github icon' src='./files/github.png' />
+                <h3> Online At </h3>
+                <a href='https://vimeo.com/jamieburton' target='_blank' rel="noopener noreferrer"> <img title='Vimeo' alt='Vimeo icon' src='./files/vimeo.png' /> </a>
+                <a href='https://github.com/jamiebb' target='_blank' rel="noopener noreferrer"> <img title='GitHub' alt='GitHub icon' src='./files/github.png' /> </a>
+                <a href='https://www.linkedin.com/in/burtonjamie/' target='_blank' rel="noopener noreferrer">  <img title='LinkedIn' alt='LinkedIn icon' src='./files/linkedin.png' /> </a>
             </div>
         </div>
     )

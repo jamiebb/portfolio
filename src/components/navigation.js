@@ -1,19 +1,43 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function Navigation(props) {
-    return (
-        <div className='Navigation'>
-            <div className='navigationDividingLine'></div>
-            <div className='NavigationLinks'>    
-                <p className='navigationLeft'> <span> About Me </span> </p>
-                <p> <span> Skills </span> </p>
-                <p> <span> Projects </span> </p>
-                <p> <span> Contact </span> </p>
-                <p className='navigationRight'> <span> Resume </span> </p>
+class Navigation extends Component {
+    constructor(props) {
+        super(props);
+
+        this.handleScroll = this.handleScroll.bind(this);
+    }
+
+    componentDidMount(){
+        window.addEventListener('scroll', this.handleScroll);
+    }
+    
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll() {
+        console.log('scroll')
+        var navbar = document.querySelector('.Navigation');
+
+        if (window.scrollY > 0) {
+          this.setState({ scrollingLock: true });
+          navbar.classList.add('sticky');
+        }
+      }
+
+    render() {
+        return (
+            <div className='Navigation'>
+                <div className='NavigationLinks'>  
+                    <a href='#AboutMe'> <span> About Me </span> </a>
+                    <a href='#Skills'> <span> Skills </span> </a>
+                    <a href='#Projects'> <span> Projects </span> </a>
+                    <a href='#Contact'> <span> Contact </span> </a>
+                    <a href='./files/resume.pdf' target='_blank' > <span> Resume </span> </a>
+                </div>
             </div>
-            <div className='navigationDividingLine'></div>
-        </div>
-    )
+        )
+    }
 }
 
 export default Navigation

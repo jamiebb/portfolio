@@ -2,7 +2,7 @@ import React from 'react'
 
 function AboutMe(props) {
     return (
-        <div className='AboutMe'>
+        <div id='AboutMe' className='AboutMe'>
             <h2> About Me </h2>
             <div className='AboutMeContent'>
                 <img alt='Jamie' src='./files/jamie.jpg'/>

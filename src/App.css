@@ -17,19 +17,38 @@ h2, h3 {
 p, a { 
     font-family: "futura-pt";
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 
-h1, h2, h3, h4, h5, h6, .NavigationLinks p, .SkillsContent p {
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, .NavigationLinks a, .SkillsContent p {
     font-family: 'Barlow Condensed', sans-serif;
 }
 
-.navigationDividingLine, .mainDividingLine {
-    height: .075em;
+.mainDividingLine {
+    height: 1px;
+}
+
+.projectDividingLine {
+    height: 0;
+}
+
+.mainDividingLine, .projectDividingLine {
     width: 100%;
     background-color: #231F20;
     clear: both;
     float: left;
+}
+
+.mainDividingLine {
+    margin: 5.5em 0 4em;
+}
+
+.projectDividingLine {
+    margin: 5.5em 0;
 }
 
 .AboutMe, .Skills, .Projects, .Contact {
@@ -37,13 +56,13 @@ h1, h2, h3, h4, h5, h6, .NavigationLinks p, .SkillsContent p {
     float: left;
     width: 100%;
     clear: both;
-    margin: 4em 0;
 }
 
 /* HEADER */
 
 .Header img {
     width: 100%;
+    margin-bottom: 1em;
 }
 
 /* CONTENT */
@@ -58,30 +77,52 @@ h1, h2, h3, h4, h5, h6, .NavigationLinks p, .SkillsContent p {
 .Navigation {
     overflow: auto;
     width: 100%;
+    background-color: white;
+    border: 1px solid #231F20;
+    border-radius: .15em;
+    display: none;
 }
 
-.NavigationLinks p {
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.sticky {
+    display: block;
+    width: 70%;
+    position: fixed;
+    bottom: 0;
+    animation: fadein .5s;
+}
+
+.NavigationLinks {
+    width: 92.5%;
+    margin: 0 auto;
+}
+
+.NavigationLinks a {
     float: left;
     width: 20%;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #675C5E;
     margin: .5em 0;
     text-align: center;
 }
 
-p.navigationLeft {
-    text-align: left;
+.NavigationLinks a:hover {
+    color: #231F20;
 }
 
-p.navigationRight {
-    text-align: right;
-}
-
-.NavigationLinks p span:hover {
+.NavigationLinks a span:hover {
     cursor: pointer;
 }
 
 /* ABOUT ME */
+
+.AboutMe {
+    margin-top: 4em;
+}
 
 .AboutMeContent p, .AboutMeContent img {
     float: left;
@@ -100,11 +141,15 @@ p.navigationRight {
 
 /* SKILLS */
 
+.Skills h2 {
+    margin-bottom: 0 !important;
+}
+
 .SkillsContent {
     width: 33%;
     float: left;
     text-align: center;
-    margin-bottom: 2em;
+    margin-top: 4em;
 }
 
 .SkillsContent img {
@@ -114,7 +159,7 @@ p.navigationRight {
 }
 
 .SkillsContent p {
-    font-size: 2em;
+    font-size: 2.25em;
 }
 
 /* PROJECTS */
@@ -122,14 +167,19 @@ p.navigationRight {
 h2 {
     text-align: center;
     font-size: 5em;
-    margin-bottom: .5em;
+    margin-bottom: .75em;
+}
+
+.Project {
+    overflow: auto;
 }
 
 .ProjectImage {
     width: 100%;
     cursor: pointer;
-    border: 1px solid rgba(0,0,0,.3);
-    margin-bottom: 1.5em;
+    border: 1px solid #231F20;
+    border-radius: .15em;
+    margin-bottom: 3em;
 }
 
 .Project h3 {
@@ -155,44 +205,51 @@ h2 {
 }
 
 .ProjectCodeImage {
-    width: 2em;
+    width: 3em;
     margin-left: 1em;
 }
 
-.ProjectCodeGitHub {
-    margin: .5em 0;
-}
-
-.ProjectCodeGitHub p, .ProjectCodeGitHub img {
-    float: right;
-}
-
-.ProjectCodeGitHub p {
+.GitHub {
+    width: 1.75em;
     margin-left: .25em;
-}
-
-.ProjectCodeGitHub img {
-    height: 1.25em;
-    margin-top: .25em;
+    cursor: pointer;
 }
 
 /* CONTACT */
 
 h3 {
-    font-size: 2.5em;
+    font-size: 3em;
+}
+
+.Contact {
+    margin-bottom: 5.5em;
 }
 
 .ContactEmail, .ContactSocial {
     width: 50%;
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
 .ContactEmail h3, .ContactSocial h3 {
     margin-bottom: .5em;
 }
 
+.ContactSocial a img {
+    width: 1.5em;
+    margin-left: .5em;
+}
+
 .ContactEmail {
     float: left;
+}
+
+.ContactEmail p a {
+    font-size: 1em;
+}
+
+.ContactEmail p a:hover {
+    cursor: pointer;
+    color: #231F20;
 }
 
 .ContactSocial {
@@ -201,5 +258,6 @@ h3 {
 }
 
 .ContactSocial img {
-    width: 1.25em;
+    width: 2.5em;
+    cursor: pointer;
 }

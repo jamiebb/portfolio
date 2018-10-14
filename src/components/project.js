@@ -3,7 +3,9 @@ import React from 'react'
 function Project(props) {
     return (
         <div className='Project'>
-            <img src={props.project.image} className='ProjectImage' />
+            <a target='_blank' rel='noopener noreferrer' href={`${props.project.link}`}> 
+                <img src={props.project.image} alt={`${props.project.title} website`} className='ProjectImage' /> 
+            </a>
             <div className='ProjectDescription'>
                 <h3> Description </h3>
                 <p> {props.project.description} </p>
@@ -11,13 +13,13 @@ function Project(props) {
             <div className='ProjectCode'>
                 <h3> Code </h3>
                 {props.project.code.map((code) => {
-                    return <img className='ProjectCodeImage' alt={`${props.project.title}-${code}`} src={`./files/${code}.png`}/>
+                    return <img key={`${props.project.title}-${code}`} title={`${code}`} className='ProjectCodeImage' alt={`${props.project.title}-${code}`} src={`./files/${code}.png`}/>
                 })}
-                <div className='ProjectCodeGitHub' href={`${props.project.github}`}>
-                    <p> GitHub </p>
-                    <img alt={`${props.project.title}-github`} src='./files/github.png' />
-                </div>
+                <a target='_blank' rel='noopener noreferrer' href={`${props.project.github}`}>
+                    <img className='ProjectCodeImage GitHub' title='GitHub' alt={`${props.project.title}-github`} src='./files/github.png' />
+                </a>
             </div>
+            {!props.project.last && <div className='projectDividingLine' />}
         </div>
     )
 }
