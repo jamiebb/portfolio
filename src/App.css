@@ -70,6 +70,7 @@ h1, h2, h3, h4, h5, h6, .NavigationLinks a, .SkillsContent p {
 .Content {
     width: 70%;
     margin: 0 auto;
+    overflow: auto;
 }
 
 /* NAVIGATION */
@@ -359,5 +360,93 @@ h3 {
 @media only screen and (max-width: 1250px) {
     p {
         font-size: 1.5em !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h2 {
+        font-size: 2em;
+    }
+
+    .Navigation {
+        width: 90%;
+    }
+
+    p, .Navigation a {
+        font-size: 1em !important;
+    }
+
+    .Content {
+        width: 90%;
+    }
+
+    /* ABOUT ME */
+
+    .AboutMe {
+        margin: 1em;
+    }
+
+    .AboutMe h2 {
+        margin-bottom: 0;
+        width: 90%;
+    }
+
+    .AboutMeContent {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .AboutMeContent img {
+        display: none;
+    }
+
+    .AboutMeContent p {
+        width: 90%;
+        margin: 1em 0 0;
+        text-align: left;
+    }
+
+    .mainDividingLine {
+        margin: 2em 0;
+    }
+
+    /* SKILLS */
+
+    .SkillsContent {
+        width: 50%;
+        margin-top: 1.5em;
+    }
+
+    .SkillsContent img {
+        width: 3em;
+        height: 3em;
+    }
+
+    /* PROJECTS */
+
+    h3 {
+        font-size: 1.75em;
+    }
+
+    .ProjectsSmall {
+        margin-top: 1.5em;
+    }
+
+    .ProjectSmall {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .ProjectCodeImage {
+        width: 2em;
+    }
+
+    .GitHub {
+        width: 1.25em;
+    }
+
+    .ContactSocial a img {
+        width: 1.25em;
     }
 }
