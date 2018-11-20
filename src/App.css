@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     padding: 0;
     margin: 0;
     cursor: default;
@@ -178,9 +178,13 @@ h2 {
 .ProjectImage {
     width: 100%;
     cursor: pointer;
-    border: 1px solid #231F20;
+    border: .05em solid #231F20;
     border-radius: .15em;
     margin-bottom: 1.5em;
+}
+
+.ProjectImage:hover {
+    border: .1em solid #231F20;
 }
 
 .Project h3 {
@@ -222,8 +226,9 @@ h2 {
 }
 
 .ProjectSmall {
-    float: left;
-    width: 25%;
+    display: inline-block;
+    width: 33%;
+    margin: 1em 0;
 }
 
 .ProjectSmall img {
@@ -233,7 +238,7 @@ h2 {
 }
 
 .ProjectSmall img:hover, .selected {
-    border: 1.5px solid #231F20;
+    border: .1em solid #231F20;
 }
 
 /* CONTACT */

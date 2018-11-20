@@ -1,5 +1,5 @@
 export const skills = (state = 
-    ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Sass', 'jQuery', 'Node', 
+    ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Vue', 'Sass', 'jQuery', 'Node', 
     'Extensions', 'Illustrator', 'Photoshop'],
      action) => {
     switch (action.type) {

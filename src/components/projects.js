@@ -18,8 +18,7 @@ class Projects extends Component {
             <div id='Projects' className='Projects'>
                 <h2> Projects </h2>
                 <Project key={`project-${this.state.currentProject}`} project={currentProject[0]} />
-
-                                <div className='ProjectsSmall'>
+                <div className='ProjectsSmall'>
                     {this.props.projects.map((project) => {
                         if (project.title === this.state.currentProject) {
                             return (

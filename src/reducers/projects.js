@@ -14,6 +14,17 @@ export const projects = (state=[], action) => {
                     code: ['React', 'Redux', 'HTML', 'CSS', 'JavaScript', 'Photoshop']
                 },
                 {
+                    title: 'Double Team',
+                    image: './files/double_team.jpg',
+                    link: 'https://jamiebb.github.io/double_team/',
+                    description: `This is a game where you choose five movies and try to get a higher score with Do Your Best or 
+                    a lower score with Do Your Worst versus another team of five. The rankings are pulled from The Movie DB via API. 
+                    The idea was a combination of my interest in movies and making a game out of it, using a layout similar to a 
+                    video game I play.`,
+                    github: 'https://github.com/jamiebb/double_team',
+                    code: ['Vue', 'HTML', 'CSS', 'JavaScript']
+                },
+                {
                     title: 'Canvas Chrome Extension',
                     image: './files/chrome_extension.png',
                     link: 'https://vimeo.com/jamieburton/canvas',
