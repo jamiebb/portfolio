@@ -3,17 +3,6 @@ export const projects = (state=[], action) => {
         default:
             return [
                 {
-                    title: 'eStore',
-                    image: './files/estore.jpg',
-                    link: 'https://jamiebb.github.io/ecommerce/',
-                    description: `This is a mockup of an eCommerce site. I browsed features 
-                    on Amazon and integrated them into this site. These include viewing recent 
-                    orders, creating wish lists, filtering based on price and rating, a buy it 
-                    again option, and other elements.`,
-                    github: 'https://github.com/jamiebb/ecommerce',
-                    code: ['React', 'Redux', 'HTML', 'CSS', 'JavaScript', 'Photoshop']
-                },
-                {
                     title: 'Double Team',
                     image: './files/double_team.jpg',
                     link: 'https://jamiebb.github.io/double_team/',
@@ -23,6 +12,17 @@ export const projects = (state=[], action) => {
                     video game I play.`,
                     github: 'https://github.com/jamiebb/double_team',
                     code: ['Vue', 'HTML', 'CSS', 'JavaScript']
+                },
+                {
+                    title: 'eStore',
+                    image: './files/estore.jpg',
+                    link: 'https://jamiebb.github.io/ecommerce/',
+                    description: `This is a mockup of an eCommerce site. I browsed features 
+                    on Amazon and integrated them into this site. These include viewing recent 
+                    orders, creating wish lists, filtering based on price and rating, a buy it 
+                    again option, and other elements.`,
+                    github: 'https://github.com/jamiebb/ecommerce',
+                    code: ['React', 'Redux', 'HTML', 'CSS', 'JavaScript', 'Photoshop']
                 },
                 {
                     title: 'Canvas Chrome Extension',

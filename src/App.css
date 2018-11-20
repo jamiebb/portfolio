@@ -178,7 +178,7 @@ h2 {
 .ProjectImage {
     width: 100%;
     cursor: pointer;
-    border: .05em solid #231F20;
+    border: .1em solid rgba(0,0,0,0);
     border-radius: .15em;
     margin-bottom: 1.5em;
 }
@@ -232,8 +232,9 @@ h2 {
 }
 
 .ProjectSmall img {
-    width: 80%;
+    width: 90%;
     cursor: pointer;
+    border: .1em solid rgba(0,0,0,0);
     border-radius: .15em;
 }
 
