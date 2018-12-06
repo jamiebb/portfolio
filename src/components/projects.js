@@ -6,7 +6,7 @@ class Projects extends Component {
     constructor(props) {
         super(props);
 
-        this.state = { currentProject: 'Double Team'};
+        this.state = { currentProject: 'eStore'};
     }
 
     render() {
