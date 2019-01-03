@@ -6,7 +6,9 @@ export const projects = (state=[], action) => {
                     title: 'The Social',
                     image: './files/the_social.jpg',
                     link: 'https://the-social-app.herokuapp.com/',
-                    description: 'This is a mockup of a social networking site.',
+                    description: `This is a mockup of a social networking site. I looked at features on Facebook and LinkedIn and integrated 
+                    some of them, such as posting, commenting, liking, adding friends, visiting other profiles, and other elements. With the 
+                    base site now completed, I am planning on integrating more ideas in the future.`,
                     github: 'https://github.com/jamiebb/the-social-app',
                     code: ['React', 'Redux', 'Node', 'MongoDB', 'HTML', 'CSS', 'JavaScript', 'Illustrator', 'Photoshop']
                 },
