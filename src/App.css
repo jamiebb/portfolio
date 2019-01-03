@@ -184,7 +184,11 @@ h2 {
 }
 
 .ProjectImage:hover {
-    border: .1em solid #231F20;
+    border: .05em solid #231F20;
+}
+
+.ProjectImage:hover {
+    opacity: .9;
 }
 
 .Project h3 {
@@ -234,12 +238,16 @@ h2 {
 .ProjectSmall img {
     width: 90%;
     cursor: pointer;
-    border: .1em solid rgba(0,0,0,0);
+    border: .05em solid rgba(0,0,0,0);
     border-radius: .15em;
 }
 
 .ProjectSmall img:hover, .selected {
-    border: .1em solid #231F20;
+    border: .05em solid #231F20;
+}
+
+.ProjectSmall img:hover {
+    opacity: .8;
 }
 
 /* CONTACT */

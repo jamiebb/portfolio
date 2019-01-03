@@ -3,6 +3,14 @@ export const projects = (state=[], action) => {
         default:
             return [
                 {
+                    title: 'The Social',
+                    image: './files/the_social.jpg',
+                    link: 'https://the-social-app.herokuapp.com/',
+                    description: 'This is a mockup of a social networking site.',
+                    github: 'https://github.com/jamiebb/the-social-app',
+                    code: ['React', 'Redux', 'Node', 'MongoDB', 'HTML', 'CSS', 'JavaScript', 'Illustrator', 'Photoshop']
+                },
+                {
                     title: 'eStore',
                     image: './files/estore.jpg',
                     link: 'https://jamiebb.github.io/ecommerce/',

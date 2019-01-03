@@ -3,7 +3,7 @@ import React from 'react'
 function Project(props) {
     return (
         <div className='Project'>
-            <a target='_blank' rel='noopener noreferrer' href={`${props.project.link}`} title={`${props.project.title} Link`}> 
+            <a target='_blank' rel='noopener noreferrer' href={`${props.project.link}`} title={`Link to ${props.project.title}`}> 
                 <img src={props.project.image.toLowerCase()} alt={`${props.project.title} website`} className='ProjectImage' /> 
             </a>
             <div className='ProjectDescription'>
@@ -16,7 +16,7 @@ function Project(props) {
                     return <img key={`${props.project.title}-${code}`} title={`${code}`} className='ProjectCodeImage' alt={`${props.project.title} ${code}`} src={`./files/${code.toLowerCase()}.png`}/>
                 })}
                 <a target='_blank' rel='noopener noreferrer' href={`${props.project.github}`}>
-                    <img className='ProjectCodeImage GitHub' title='GitHub Link' alt={`${props.project.title} github`} src='./files/github.png' />
+                    <img className='ProjectCodeImage GitHub' title='Link to GitHub' alt={`${props.project.title} github`} src='./files/github.png' />
                 </a>
             </div>
         </div>
