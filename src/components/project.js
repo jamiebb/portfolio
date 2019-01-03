@@ -8,6 +8,8 @@ function Project(props) {
             </a>
             <div className='ProjectDescription'>
                 <h3> Description </h3>
+                <p className='ProjectDescriptionLink'> <a href={props.project.link} rel='noopener noreferrer' target='_blank'> {props.project.title} </a> </p>
+                <p className='ProjectDescriptionLink GitHubLink'> <a href={props.project.github} rel='noopener noreferrer' target='_blank'> GitHub </a> </p>
                 <p> {props.project.description} </p>
             </div>
             <div className='ProjectCode'>

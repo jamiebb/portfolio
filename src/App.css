@@ -178,7 +178,7 @@ h2 {
 .ProjectImage {
     width: 100%;
     cursor: pointer;
-    border: .1em solid rgba(0,0,0,0);
+    border: .05em solid rgba(0,0,0,0);
     border-radius: .15em;
     margin-bottom: 1.5em;
 }
@@ -206,6 +206,23 @@ h2 {
 
 .ProjectDescription p, .Contact p, .AboutMeContent p  {
     line-height: 1.5em;
+}
+
+.ProjectDescriptionLink a {
+    display: inline-block;
+    color: #5AA0C9;
+    margin-bottom: .25em;
+    font-size: 1.75em;
+    line-height: 1.1em;
+}
+
+.GitHubLink a {
+    font-size: 1em;
+}
+
+.ProjectDescriptionLink a:hover {
+    cursor: pointer;
+    opacity: .6;
 }
 
 .ProjectCode {
@@ -272,6 +289,10 @@ h3 {
 .ContactSocial a img {
     width: 1.5em;
     margin-left: .5em;
+}
+
+.ContactSocial a img:hover {
+    opacity: .7;
 }
 
 .ContactEmail {
