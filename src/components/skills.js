@@ -6,7 +6,7 @@ class Skills extends Component {
         return (
             <div id='Skills' className='Skills'>
                 <h2> Skills </h2>
-                {this.props.skills.map((skill, index) => {
+                {this.props.skills.map((skill) => {
                     return (
                         <div className='SkillsContent' key={`skill-${skill}`}>
                             <img title={`${skill}`} alt={`${skill}-icon`} src={`./files/${skill.toLowerCase()}.png`} /> 

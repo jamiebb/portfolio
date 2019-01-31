@@ -15,7 +15,7 @@ function Project(props) {
             <div className='ProjectCode'>
                 <h3> Code </h3>
                 {props.project.code.map((code) => {
-                    return <img key={`${props.project.title}-${code}`} title={`${code}`} className='ProjectCodeImage' alt={`${props.project.title} ${code}`} src={`./files/${code.toLowerCase()}.png`}/>
+                    return <img key={`${props.project.title}-${code}`} title={`${code}`} className='ProjectCodeImage' alt={`${code}`} src={`./files/${code.toLowerCase()}.png`}/>
                 })}
                 <a target='_blank' rel='noopener noreferrer' href={`${props.project.github}`}>
                     <img className='ProjectCodeImage GitHub' title='Link to GitHub' alt={`${props.project.title} github`} src='./files/github.png' />
