@@ -185,10 +185,6 @@ h2 {
 }
 
 .ProjectImage:hover {
-    border: .05em solid #231F20;
-}
-
-.ProjectImage:hover {
     opacity: .9;
 }
 
@@ -260,12 +256,12 @@ h2 {
     border-radius: .15em;
 }
 
-.ProjectSmall img:hover, .selected {
-    border: .05em solid #231F20;
-}
-
 .ProjectSmall img:hover {
     opacity: .8;
+}
+
+.selected {
+    opacity: .5;
 }
 
 /* CONTACT */
@@ -285,6 +281,10 @@ h3 {
 
 .ContactEmail h3, .ContactSocial h3 {
     margin-bottom: .5em;
+}
+
+.ContactEmail a:hover {
+    opacity: .6;
 }
 
 .ContactSocial a img {
