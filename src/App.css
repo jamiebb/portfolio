@@ -173,10 +173,11 @@ h2 {
 
 .Project {
     overflow: auto;
+    text-align: center;
 }
 
 .ProjectImage {
-    width: 100%;
+    width: 60%;
     cursor: pointer;
     border: .05em solid rgba(0,0,0,0);
     border-radius: .15em;
@@ -398,6 +399,12 @@ h3 {
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    .ProjectImage {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 500px) {
     h2 {
         font-size: 2em;
@@ -475,6 +482,10 @@ h3 {
 
     .ProjectCodeImage {
         width: 2em;
+    }
+
+    .ProjectImage {
+        width: 100%;
     }
 
     .GitHub {
