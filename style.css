@@ -161,11 +161,11 @@ header img {
 }
 
 .project-links a {
-    color: #5aa0c9;
+    color: rgba(75,136,171);
 }
 
 .project-links a:hover {
-    color: rgba(90,160,201,.8);
+    color: rgba(75,136,171, .8);
     cursor: pointer;
 }
 
@@ -182,7 +182,8 @@ header img {
 }
 
 .project-image:hover {
-    opacity: .5;
+    border: 1px solid black;
+    /* opacity: .5; */
 }
 
 .project h2 {
