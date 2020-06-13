@@ -20,6 +20,10 @@ h1 {
     margin-bottom: .5em;
 }
 
+h2 {
+    font-size: 3em;
+}
+
 p, a { 
     font-family: "futura-pt";
     font-weight: 400;
@@ -30,7 +34,7 @@ a {
     text-decoration: none;
 }
 
-h1, h1, h2, h4, h5, h6, .navigation-links a, .skills-content p {
+h1, h2, .navigation-links a, .skills-content p {
     font-family: 'Barlow Condensed', sans-serif;
 }
 
@@ -38,9 +42,6 @@ h1, h1, h2, h4, h5, h6, .navigation-links a, .skills-content p {
     width: 100%;
     height: 1px;
     background-color: #231F20;
-}
-
-.main-dividing-line {
     margin: 4em 0 3em;
 }
 
@@ -88,7 +89,7 @@ header img {
     color: #231F20;
 }
 
-.navigation-links a span:hover {
+.navigation-links span:hover {
     cursor: pointer;
 }
 
@@ -225,44 +226,14 @@ header img {
     max-width: 3em;
 }
 
-.github {
-    width: 1.75em;
-    margin-left: .5em;
-    cursor: pointer;
-}
-
-.projects-small {
-    margin-top: 3em;
-}
-
-.project-small {
-    display: inline-block;
-    width: 33%;
-}
-
-.project-small img {
-    width: 90%;
-    cursor: pointer;
-    border: .05em solid rgba(0,0,0,0);
-    border-radius: .15em;
-}
-
-.project-small img:hover {
-    opacity: .8;
-}
-
-.selected {
-    opacity: .5;
-}
-
 /* CONTACT */
-
-h2 {
-    font-size: 3em;
-}
 
 .contact {
     margin-bottom: 5.5em;
+}
+
+.contact-email h2, .contact-social h2 {
+    margin-bottom: .5em;
 }
 
 .contact-email, .contact-social {
@@ -270,20 +241,12 @@ h2 {
     margin-top: 2em;
 }
 
-.contact-email h2, .contact-social h2 {
-    margin-bottom: .5em;
-}
-
-.contact-email a:hover {
-    opacity: .6;
-}
-
-.contact-social a img {
+.contact-social img {
     width: 1.5em;
     margin-left: .5em;
 }
 
-.contact-social a img:hover {
+.contact-social img:hover {
     opacity: .7;
 }
 
@@ -291,11 +254,12 @@ h2 {
     float: left;
 }
 
-.contact-email p a {
+.contact-email a {
     font-size: 1em;
 }
 
-.contact-email p a:hover {
+.contact-email a:hover {
+    opacity: .6;
     cursor: pointer;
     color: #231F20;
 }
@@ -472,16 +436,6 @@ h2 {
 
     .project-name {
         font-size: 1.75em;
-    }
-
-    .projects-small {
-        margin-top: 1.5em;
-    }
-
-    .project-small {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 1em;
     }
 
     .project-image-holder {
