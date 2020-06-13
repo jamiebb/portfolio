@@ -5,11 +5,11 @@
     cursor: default;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, p, a {
     color: #332E2F;
 }
 
-h1, h3 {
+h1, h2 {
     font-weight: 400;
     letter-spacing: -.035em;
 }
@@ -30,7 +30,7 @@ a {
     text-decoration: none;
 }
 
-h1, h1, h3, h4, h5, h6, .navigation-links a, .skills-content p {
+h1, h1, h2, h4, h5, h6, .navigation-links a, .skills-content p {
     font-family: 'Barlow Condensed', sans-serif;
 }
 
@@ -185,7 +185,7 @@ header img {
     opacity: .5;
 }
 
-.project h3 {
+.project h2 {
     margin-bottom: .5em;
 }
 
@@ -249,7 +249,7 @@ header img {
 
 /* CONTACT */
 
-h3 {
+h2 {
     font-size: 3em;
 }
 
@@ -262,7 +262,7 @@ h3 {
     margin-top: 2em;
 }
 
-.contact-email h3, .contact-social h3 {
+.contact-email h2, .contact-social h2 {
     margin-bottom: .5em;
 }
 
@@ -309,7 +309,7 @@ h3 {
         font-size: 7em;
     }
 
-    h3 {
+    h2 {
         font-size: 5em;
     }
 
@@ -349,7 +349,7 @@ h3 {
         font-size: 5em;
     }
 
-    h3 {
+    h2 {
         font-size: 3em;
     }
 
@@ -458,7 +458,7 @@ h3 {
         font-size: 2.5em;
     }
 
-    h3 {
+    h2 {
         font-size: 1.75em;
     }
 
