@@ -9,9 +9,15 @@ h1, h2, h3, h4, h5, h6, p, a {
     color: #332E2F;
 }
 
-h2, h3 {
+h1, h3 {
     font-weight: 400;
     letter-spacing: -.035em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: .5em;
 }
 
 p, a { 
@@ -24,239 +30,216 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, .NavigationLinks a, .SkillsContent p {
+h1, h1, h3, h4, h5, h6, .navigation-links a, .skills-content p {
     font-family: 'Barlow Condensed', sans-serif;
 }
 
-.mainDividingLine {
+.main-dividing-line{
+    width: 100%;
     height: 1px;
-}
-
-.projectDividingLine {
-    height: 0;
-}
-
-.mainDividingLine, .projectDividingLine {
-    width: 100%;
     background-color: #231F20;
-    clear: both;
-    float: left;
 }
 
-.mainDividingLine {
-    margin: 5.5em 0 4em;
+.main-dividing-line {
+    margin: 4em 0 3em;
 }
 
-.projectDividingLine {
-    margin: 5.5em 0;
-}
-
-.AboutMe, .Skills, .Projects, .Contact {
-    overflow: auto;
-    float: left;
+.about, .skills, .projects, .contact {
     width: 100%;
-    clear: both;
 }
 
 /* HEADER */
 
-.Header img {
+header img {
     width: 100%;
-    margin-bottom: 1em;
 }
 
 /* CONTENT */
 
-.Content {
+.content {
     width: 70%;
     margin: 0 auto;
-    overflow: auto;
 }
 
 /* NAVIGATION */
 
-.Navigation {
-    overflow: auto;
+.navigation {
     width: 100%;
     background-color: white;
-    border: 1px solid #231F20;
-    border-radius: .15em;
-    display: none;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.navigation-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.sticky {
-    display: block;
-    width: 70%;
-    position: fixed;
-    bottom: 0;
-    animation: fadein .5s;
-}
-
-.NavigationLinks {
-    width: 92.5%;
-    margin: 0 auto;
-}
-
-.NavigationLinks a {
-    float: left;
-    width: 20%;
+.navigation-links a {
     font-size: 1.5em;
     color: #675C5E;
     margin: .5em 0;
     text-align: center;
 }
 
-.NavigationLinks a:hover {
+.navigation-links a:hover {
     color: #231F20;
 }
 
-.NavigationLinks a span:hover {
+.navigation-links a span:hover {
     cursor: pointer;
 }
 
 /* ABOUT ME */
-
-.AboutMe {
-    margin-top: 4em;
+.about {
+    margin-top: 2em;
 }
 
-.AboutMeContent p, .AboutMeContent img {
-    float: left;
+.about-content {
+    display: flex;
 }
 
-.AboutMeContent img {
-    width: 20%;
+.about-content img {
+    flex: 1;
+    max-width: 100%;
     margin-top: .5em;
     border-radius: .2em;
 }
 
-.AboutMeContent p {
-    width: 75%;
+.about-content-description {
+    flex: 3;
     margin-left: 5%;
+}
+
+.about-content-description p:nth-of-type(2) {
+    margin-top: 1em;
 }
 
 /* SKILLS */
 
-.Skills h2 {
-    margin-bottom: 0 !important;
+.skills h1 {
+    margin-bottom: 0;
 }
 
-.SkillsContent {
+.skills-content-holder {
+    overflow: auto;
+}
+
+.skills-content {
     width: 33%;
     float: left;
     text-align: center;
     margin-top: 4em;
 }
 
-.SkillsContent img {
-    height: 6em;
+.skills-content img {
+    min-height: 3.5em;
     clear: both;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
 }
 
-.SkillsContent p {
+.skills-content p {
     font-size: 2.25em;
 }
 
 /* PROJECTS */
 
-h2 {
-    text-align: center;
-    font-size: 5em;
-    margin-bottom: .75em;
+.projects h1 {
+    margin-bottom: 0;
 }
 
-.Project {
-    overflow: auto;
-    text-align: center;
+.project {
+    margin-top: 2em;
 }
 
-.ProjectImage {
-    width: 60%;
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0 3em;
+}
+
+.project-links a {
+    color: #5aa0c9;
+}
+
+.project-links a:hover {
+    color: rgba(90,160,201,.8);
+    cursor: pointer;
+}
+
+.project-image-holder {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.project-image {
+    width: 75%;
     cursor: pointer;
     border: .05em solid rgba(0,0,0,0);
     border-radius: .15em;
-    margin-bottom: 1.5em;
 }
 
-.ProjectImage:hover {
-    opacity: .9;
+.project-image:hover {
+    opacity: .5;
 }
 
-.Project h3 {
+.project h3 {
     margin-bottom: .5em;
 }
 
-.ProjectDescription, .ProjectCode {
-    width: 50%;
-    float: left;
-}
-
-.ProjectDescription {
-    text-align: left;
-}
-
-.ProjectDescription p, .Contact p, .AboutMeContent p  {
+.project-description p, .contact p, .about-content p  {
     line-height: 1.5em;
 }
 
-.ProjectDescriptionLink a {
-    display: inline-block;
-    color: #5AA0C9;
-    margin-bottom: .25em;
-    font-size: 1.75em;
+.project-name {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2.5em;
     line-height: 1.1em;
+    font-size: 4em;
 }
 
-.GitHubLink a {
+.github-link a {
     font-size: 1em;
 }
 
-.ProjectDescriptionLink a:hover {
+.project-name a:hover {
     cursor: pointer;
     opacity: .6;
 }
 
-.ProjectCode {
-    margin-top: .5em;
-    text-align: right;
+.project-code {
+    margin-top: 1.5em;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
-.ProjectCodeImage {
-    width: 3em;
-    margin-left: 1em;
-}
-
-.GitHub {
+.github {
     width: 1.75em;
     margin-left: .5em;
     cursor: pointer;
 }
 
-.ProjectsSmall {
-    overflow: auto;
-    margin-top: 5em;
+.projects-small {
+    margin-top: 3em;
 }
 
-.ProjectSmall {
+.project-small {
     display: inline-block;
     width: 33%;
-    margin: 1em 0;
 }
 
-.ProjectSmall img {
+.project-small img {
     width: 90%;
     cursor: pointer;
     border: .05em solid rgba(0,0,0,0);
     border-radius: .15em;
 }
 
-.ProjectSmall img:hover {
+.project-small img:hover {
     opacity: .8;
 }
 
@@ -270,57 +253,59 @@ h3 {
     font-size: 3em;
 }
 
-.Contact {
+.contact {
     margin-bottom: 5.5em;
 }
 
-.ContactEmail, .ContactSocial {
+.contact-email, .contact-social {
     width: 50%;
-    margin-top: 3em;
+    margin-top: 2em;
 }
 
-.ContactEmail h3, .ContactSocial h3 {
+.contact-email h3, .contact-social h3 {
     margin-bottom: .5em;
 }
 
-.ContactEmail a:hover {
+.contact-email a:hover {
     opacity: .6;
 }
 
-.ContactSocial a img {
+.contact-social a img {
     width: 1.5em;
     margin-left: .5em;
 }
 
-.ContactSocial a img:hover {
+.contact-social a img:hover {
     opacity: .7;
 }
 
-.ContactEmail {
+.contact-email {
     float: left;
 }
 
-.ContactEmail p a {
+.contact-email p a {
     font-size: 1em;
 }
 
-.ContactEmail p a:hover {
+.contact-email p a:hover {
     cursor: pointer;
     color: #231F20;
 }
 
-.ContactSocial {
+.contact-social {
     float: right;
     text-align: right;
 }
 
-.ContactSocial img {
+.contact-social img {
     width: 2.5em;
     cursor: pointer;
 }
 
+/* MEDIA QUERIES */
+
 @media only screen and (max-width: 3000px) {
-    h2 {
+    h1 {
         font-size: 7em;
     }
 
@@ -332,32 +317,35 @@ h3 {
         font-size: 3.5em !important;
     }
 
-    .ProjectCodeImage {
+    .navigation-links a, .project-links a {
+        font-size: 2.75em;
+    }
+
+    .project-code-image {
         width: 4em;
     }
 
-    .GitHub {
+    .github {
         width: 2.5em;
     }
 
-    .SkillsContent img {
+    .skills-content img {
         height: 10em;
         margin-bottom: 1.5em;
     }
 
-    .SkillsContent p {
+    .skills-content p {
         font-size: 4em;
     }
-
     
-    .ContactSocial a img {
+    .contact-social a img {
         width: 3em;
         margin-left: 1em;
     }
 }
 
 @media only screen and (max-width: 2000px) {
-    h2 {
+    h1 {
         font-size: 5em;
     }
 
@@ -369,7 +357,11 @@ h3 {
         font-size: 1.75em !important;
     }
 
-    .ProjectCodeImage {
+    .navigation-links a, .project-links a {
+        font-size: 1.75em;
+    }
+
+    .project-code-image {
         width: 3em;
     }
 
@@ -377,17 +369,17 @@ h3 {
         width: 1.75em;
     }
 
-    .SkillsContent img {
+    .skills-content img {
         height: 6em;
         margin-bottom: .5em;
     }
 
-    .SkillsContent p {
+    .skills-content p {
         font-size: 2.25em;
     }
 
     
-    .ContactSocial a img {
+    .contact-social a img {
         width: 1.5em;
         margin-left: .5em;
     }
@@ -400,99 +392,115 @@ h3 {
 }
 
 @media only screen and (max-width: 1000px) {
-    .ProjectImage {
+    .project-image {
         width: 100%;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    h2 {
+    h1 {
         font-size: 2em;
     }
 
-    .Navigation {
-        width: 90%;
-    }
-
-    p, .Navigation a {
+    p, .navigation a {
         font-size: 1em !important;
     }
 
-    .Content {
+    .content {
         width: 90%;
+    }
+
+    iframe {
+        width: 100%;
+        max-height: 200px;
     }
 
     /* ABOUT ME */
 
-    .AboutMe {
-        margin: 1em;
-    }
-
-    .AboutMe h2 {
+    .about h1 {
         margin-bottom: 0;
-        width: 90%;
     }
 
-    .AboutMeContent {
+    .about-content {
         margin: 0 auto;
         text-align: center;
+        width: 100%;
     }
 
-    .AboutMeContent img {
+    .about-content img {
         display: none;
     }
 
-    .AboutMeContent p {
-        width: 90%;
+    .about-content-description {
         margin: 1em 0 0;
         text-align: left;
     }
 
-    .mainDividingLine {
-        margin: 2em 0;
+    .main-dividing-line {
+        margin: 3em 0 2em;
     }
 
     /* SKILLS */
 
-    .SkillsContent {
+    .skills-content {
         width: 50%;
         margin-top: 1.5em;
     }
 
-    .SkillsContent img {
+    .skills-content img {
         width: 3em;
         height: auto;
     }
 
     /* PROJECTS */
 
+    h1 {
+        font-size: 2.5em;
+    }
+
     h3 {
         font-size: 1.75em;
     }
 
-    .ProjectsSmall {
+    .project-links a {
+        font-size: 1em;
+    }
+
+    .project-links {
+        margin: 1em 0 1em;
+    }
+
+    .project-name {
+        font-size: 1.75em;
+    }
+
+    .projects-small {
         margin-top: 1.5em;
     }
 
-    .ProjectSmall {
+    .project-small {
         width: 100%;
         text-align: center;
         margin-bottom: 1em;
     }
 
-    .ProjectCodeImage {
+    .project-code-image {
         width: 2em;
     }
 
-    .ProjectImage {
+    .project-image-holder {
+        margin-bottom: 1.5em;
+    }
+
+    .project-image {
         width: 100%;
     }
 
-    .GitHub {
+    .github {
         width: 1.25em;
     }
 
-    .ContactSocial a img {
+    .contact-social a img {
         width: 1em;
     }
 }
