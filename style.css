@@ -45,13 +45,7 @@ h1, h2, .navigation-links a, .skills-content p {
     margin: 4em 0 3em;
 }
 
-.about, .skills, .projects, .contact {
-    width: 100%;
-}
-
-/* HEADER */
-
-header img {
+.about, .skills, .projects, .contact, header img {
     width: 100%;
 }
 
