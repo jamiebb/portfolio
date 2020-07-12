@@ -354,7 +354,31 @@ main, nav, footer {
     }
 }
 
+@media only screen and (max-width: 850px) {
+    iframe {
+        width: 100%;
+    }
+
+    .about h2 {
+        margin-bottom: 0;
+    }
+
+    .about-content {
+        flex-wrap: wrap;
+    }
+
+    .about-content-image {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
 @media only screen and (max-width: 500px) {
+    .about-content-image img {
+        max-width: 100px;
+    }
+
     h2 {
         font-size: 2em;
     }
@@ -374,23 +398,18 @@ main, nav, footer {
 
     /* ABOUT ME */
 
-    .about h2 {
-        margin-bottom: 0;
-    }
-
     .about-content {
         margin: 0 auto;
         text-align: center;
         width: 100%;
     }
 
-    .about-content img {
-        display: none;
+    .about-content-description {
+        text-align: left;
     }
 
-    .about-content-description {
-        margin: 1em 0 0;
-        text-align: left;
+    .about-content-image {
+        margin-bottom: .5rem;
     }
 
     .main-dividing-line {
