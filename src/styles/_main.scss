@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box !important;
+    padding: 0;
+    margin: 0;
+    cursor: default;
+}
+
+h2, h3, p, a, p {
+    color: #332E2F;
+}
+
+h2, h3 {
+    font-weight: 400;
+    letter-spacing: -.035em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: .5em;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+p, a, p { 
+    font-family: "futura-pt";
+    font-weight: 400;
+    font-size: 1.75em;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2, h3, .navigation-links a, .skills-content p {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.main-dividing-line{
+    width: 100%;
+    height: 1px;
+    background-color: #231F20;
+    margin: 4em 0 3em;
+}
+
+.about, .skills, .projects, header img {
+    width: 100%;
+}
+
+main, nav, footer {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}

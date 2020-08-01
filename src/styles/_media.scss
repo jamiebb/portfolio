@@ -1,0 +1,209 @@
+@media only screen and (max-width: 3000px) {
+  h2 {
+    font-size: 7em;
+  }
+
+  h3 {
+    font-size: 5em;
+  }
+
+  p {
+    font-size: 3.5em !important;
+  }
+
+  .navigation-links,
+  .project-links {
+    a {
+      font-size: 2.75em;
+    }
+  }
+
+  .github {
+    width: 2.5em;
+  }
+
+  .skills-content {
+    img {
+      height: 10em;
+      margin-bottom: 1.5em;
+    }
+
+    p {
+      font-size: 4em;
+    }
+  }
+
+  .contact-social {
+    a {
+      img {
+        width: 3em;
+        margin-left: 1em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 2000px) {
+  h2 {
+    font-size: 5em;
+  }
+
+  h3 {
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 1.75em !important;
+  }
+
+  .navigation-links,
+  .project-links {
+    a {
+      font-size: 1.75em;
+    }
+  }
+
+  .github {
+    width: 1.75em;
+  }
+
+  .skills-content {
+    img {
+      height: 6em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 2.25em;
+    }
+  }
+
+  .contact-social {
+    a {
+      img {
+        width: 1.5em;
+        margin-left: 0.5em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  p {
+    font-size: 1.5em !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-image {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  iframe {
+    width: 100%;
+  }
+
+  .about {
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+
+  .about-content {
+    flex-wrap: wrap;
+  }
+
+  .about-content-image {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 1.75em;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  iframe {
+    width: 100%;
+    max-height: 200px;
+  }
+
+  .main-dividing-line {
+    margin: 3em 0 2em;
+  }
+
+  p,
+  .navigation a {
+    font-size: 1em !important;
+  }
+
+  .about-content {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  .about-content-description {
+    text-align: left;
+  }
+
+  .about-content-image {
+    margin-bottom: 0.5rem;
+    img {
+      max-width: 100px;
+    }
+  }
+
+  .skills-content {
+    width: 50%;
+    margin-top: 1.5em;
+    img {
+      width: 3em;
+      height: auto;
+    }
+  }
+
+  .project-links {
+    margin: 1em 0 1em;
+
+    a {
+      font-size: 1em;
+    }
+  }
+
+  .project-name {
+    font-size: 1.75em;
+  }
+
+  .project-image-holder {
+    margin-bottom: 1.5em;
+  }
+
+  .project-image {
+    width: 100%;
+  }
+
+  .github {
+    width: 1.25em;
+  }
+
+  .contact-social {
+    a {
+      img {
+        width: 1em;
+      }
+    }
+  }
+}
