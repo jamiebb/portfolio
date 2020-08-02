@@ -2,25 +2,25 @@
   h2 {
     margin-bottom: 0;
   }
-}
 
-.skills-content-holder {
-  overflow: auto;
-}
+  &-content {
+    width: 33%;
+    float: left;
+    text-align: center;
+    margin-top: 4em;
+  
+    img {
+      min-height: 3.5em;
+      clear: both;
+      margin-bottom: 1em;
+    }
+  
+    p {
+      font-size: 2.25em;
+    }
 
-.skills-content {
-  width: 33%;
-  float: left;
-  text-align: center;
-  margin-top: 4em;
-
-  img {
-    min-height: 3.5em;
-    clear: both;
-    margin-bottom: 1em;
-  }
-
-  p {
-    font-size: 2.25em;
+    &-holder {
+      overflow: auto;
+    }
   }
 }

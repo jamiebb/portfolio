@@ -1,27 +1,27 @@
 .navigation {
-    background-color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 
-.navigation-links {
+  &-links {
     width: 100%;
     display: flex;
     justify-content: space-between;
 
     a {
-        font-size: 1.5em;
-        color: #675C5E;
-        margin: .5em 0;
-        text-align: center;
+      font-size: 1.5em;
+      color: #675c5e;
+      margin: 0.5em 0;
+      text-align: center;
 
-        &:hover {
-            color: #231F20;
-        }
+      &:hover {
+        color: #231f20;
+      }
     }
 
     span:hover {
-        cursor: pointer;
+      cursor: pointer;
     }
+  }
 }
