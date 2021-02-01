@@ -20,26 +20,32 @@
     <link rel="stylesheet" href="https://use.typekit.net/lpu7upv.css" />
   </head>
   <body>
+    <a href="#about" class="off-screen"> Skip Link </a>
     <header>
       <img
         alt="Jamie Burton, Frontend Developer"
         src="./files/images/header.jpg"
       />
     </header>
+    <h1 class="off-screen">Jamie Burton's Portfolio</h1>
     <nav class="navigation">
       <div class="navigation-links">
+        <h2 class="off-screen">Main Navigation</h2>
         <a href="#about"> <span> About Me </span> </a>
         <a href="#skills"> <span> Skills </span> </a>
         <a href="#projects"> <span> Projects </span> </a>
         <a href="#contact"> <span> Contact </span> </a>
-        <a href="/files/jamieburton_resume.pdf" target="_blank">
+        <a
+          aria-label="PDF Resume"
+          href="/files/jamieburton_resume.pdf"
+          target="_blank"
+        >
           <span> Resume </span></a
         >
       </div>
     </nav>
     <main>
-      <h1 class="hidden">Jamie Burton's Portfolio</h1>
-      <section id="about" class="about">
+      <section role="region" id="about" class="about">
         <h2>About Me</h2>
         <div class="about-content">
           <div class="about-content-image">
@@ -62,29 +68,26 @@
         </div>
       </section>
       <div class="main-dividing-line"></div>
-      <section id="skills" class="skills">
-        <h2>Skills</h2>
+      <section aria-label="Skills" id="skills" class="skills">
+        <h2 aria-label="Skills Jamie Knows">Skills</h2>
         <div class="skills-content-holder">
           <div class="skills-content">
             <img
-              title="HTML"
-              alt="HTML logo"
+              alt="HTML"
               src="./files/images/skills/html.png"
             />
             <p>HTML</p>
           </div>
           <div class="skills-content">
             <img
-              title="CSS"
-              alt="CSS logo"
+              alt="CSS"
               src="./files/images/skills/css.png"
             />
             <p>CSS</p>
           </div>
           <div class="skills-content">
             <img
-              title="Sass"
-              alt="Sass logo"
+              alt="Sass"
               src="./files/images/skills/sass.png"
             />
             <p>Sass</p>
@@ -92,39 +95,35 @@
           <div class="skills-content">
             <img
               title="JavaScript"
-              alt="JavaScript logo"
+              alt="JavaScript"
               src="./files/images/skills/javascript.png"
             />
             <p>JavaScript</p>
           </div>
           <div class="skills-content">
             <img
-              title="React"
-              alt="React logo"
+              alt="React"
               src="./files/images/skills/react.png"
             />
             <p>React</p>
           </div>
           <div class="skills-content">
             <img
-              title="Redux"
-              alt="Redux logo"
+              alt="Redux"
               src="./files/images/skills/redux.png"
             />
             <p>Redux</p>
           </div>
           <div class="skills-content">
             <img
-              title="jQuery"
-              alt="jQuery logo"
+              alt="jQuery"
               src="./files/images/skills/jquery.png"
             />
             <p>jQuery</p>
           </div>
           <div class="skills-content">
             <img
-              title="GraphQL"
-              alt="GraphQL logo"
+              alt="GraphQL"
               src="./files/images/skills/graphql.png"
             />
             <p>GraphQL</p>
@@ -132,39 +131,35 @@
           <div class="skills-content">
             <img
               title="Apollo"
-              alt="Apollo logo"
+              alt="Apollo"
               src="./files/images/skills/apollo.png"
             />
             <p>Apollo</p>
           </div>
           <div class="skills-content">
             <img
-              title="Git"
-              alt="Git logo"
+              alt="Git"
               src="./files/images/skills/git.png"
             />
             <p>Git</p>
           </div>
           <div class="skills-content">
             <img
-              title="Jest"
-              alt="Jest logo"
+              alt="Jest"
               src="./files/images/skills/jest.png"
             />
             <p>Jest</p>
           </div>
           <div class="skills-content">
             <img
-              title="Developer Tools"
-              alt="Developer Tools logo"
+              alt="Developer Tools"
               src="./files/images/skills/developer-tools.png"
             />
             <p>Developer Tools</p>
           </div>
           <div class="skills-content">
             <img
-              title="Node"
-              alt="Node logo"
+              alt="Node"
               src="./files/images/skills/node.png"
             />
             <p>Node</p>
@@ -172,18 +167,18 @@
         </div>
       </section>
       <div class="main-dividing-line"></div>
-      <section id="projects" class="projects">
-        <h2>Projects</h2>
+      <section aria-label="Projects" id="projects" class="projects">
+        <h2 aria-label="Projects Jamie has worked on">Projects</h2>
         <div class="project">
-          <h3 class="project-name">Desk Finder</h3>
+          <h3 id="desk-finder" class="project-name">Desk Finder</h3>
           <div class="project-image-holder">
-            <iframe
-              src="https://player.vimeo.com/video/429060431"
-              width="640"
-              height="360"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
+            <a
+              href="https://vimeo.com/429060431"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img alt="Video of Desk Finder Project" src="files/images/projects/desk-finder.png" />
+            </a>
           </div>
           <div class="project-description">
             <p>
@@ -197,6 +192,8 @@
           </div>
           <div class="project-links">
             <a
+              id="desk-finder-code-link"
+              aria-labelledby="desk-finder desk-finder-code-link"
               href="https://github.com/jamieburtondev/desk-finder"
               target="_blank"
               rel="noreferrer"
@@ -205,33 +202,30 @@
             </a>
           </div>
           <div class="project-code">
+            <h4 class="off-screen"> Languages Used </h4>
             <div class="project-code-image">
               <img
-                title="HTML"
                 alt="HTML"
                 src="./files/images/skills/html.png"
               />
             </div>
             <div class="project-code-image">
-              <img title="CSS" alt="CSS" src="./files/images/skills/css.png" />
+              <img alt="CSS" src="./files/images/skills/css.png" />
             </div>
             <div class="project-code-image">
               <img
-                title="JavaScript"
                 alt="JavaScript"
                 src="./files/images/skills/javascript.png"
               />
             </div>
             <div class="project-code-image">
               <img
-                title="Node"
                 alt="Node"
                 src="./files/images/skills/node.png"
               />
             </div>
             <div class="project-code-image">
               <img
-                title="Sequelize"
                 alt="Sequelize"
                 src="./files/images/skills/sequelize.png"
               />
@@ -240,7 +234,7 @@
         </div>
         <div class="main-dividing-line"></div>
         <div class="project">
-          <h3 id="project-title" class="project-name">Code Blocks</h3>
+          <h3 id="code-blocks" class="project-name">Code Blocks</h3>
           <div class="project-image-holder">
             <img
               class="project-image"
@@ -259,6 +253,8 @@
           </div>
           <div class="project-links">
             <a
+              id="code-blocks-code-link"
+              aria-labelledby="code-blocks code-blocks-code-link"
               href="https://github.com/jamieburtondev/codeblocks"
               target="_blank"
               rel="noreferrer"
@@ -266,6 +262,8 @@
               Read the Code
             </a>
             <a
+              id="code-blocks-project-link"
+              aria-labelledby="code-blocks code-blocks-project-link"
               href="https://codeblocks.jamieburton.com/"
               target="_blank"
               rel="noreferrer"
@@ -274,33 +272,30 @@
             </a>
           </div>
           <div class="project-code">
+            <h4 class="off-screen"> Languages Used </h4>
             <div class="project-code-image">
               <img
-                title="HTML"
                 alt="HTML"
                 src="./files/images/skills/html.png"
               />
             </div>
             <div class="project-code-image">
-              <img title="CSS" alt="CSS" src="./files/images/skills/css.png" />
+              <img alt="CSS" src="./files/images/skills/css.png" />
             </div>
             <div class="project-code-image">
               <img
-                title="JavaScript"
                 alt="JavaScript"
                 src="./files/images/skills/javascript.png"
               />
             </div>
             <div class="project-code-image">
               <img
-                title="jQuery"
                 alt="jQuery"
                 src="./files/images/skills/jquery.png"
               />
             </div>
             <div class="project-code-image">
               <img
-                title="Illustrator"
                 alt="Illustrator"
                 src="./files/images/skills/illustrator.png"
               />
@@ -311,15 +306,15 @@
         <div class="project">
           <h3 class="project-name">Canvas Chrome Extension</h3>
           <div class="project-image-holder">
-            <a href="https://vimeo.com/jamieburton/canvas">
-              <iframe
-                title="vimeo-player"
-                src="https://player.vimeo.com/video/275138341"
-                width="640"
-                height="360"
-                frameborder="0"
-                allowfullscreen
-              ></iframe>
+            <a
+              href="https://vimeo.com/275138341"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                alt="Canvas Chrome Extension Project"
+                src="files/images/projects/chrome-extension.jpg"
+              />
             </a>
           </div>
           <div class="project-description">
@@ -331,15 +326,15 @@
             </p>
           </div>
           <div class="project-code">
+            <h4 class="off-screen"> Languages Used </h4>
             <div class="project-code-image">
               <img
-                title="HTML"
                 alt="HTML"
                 src="./files/images/skills/html.png"
               />
             </div>
             <div class="project-code-image">
-              <img title="CSS" alt="CSS" src="./files/images/skills/css.png" />
+              <img alt="CSS" src="./files/images/skills/css.png" />
             </div>
             <div class="project-code-image">
               <img
@@ -350,14 +345,12 @@
             </div>
             <div class="project-code-image">
               <img
-                title="jQuery"
                 alt="jQuery"
                 src="./files/images/skills/jquery.png"
               />
             </div>
             <div class="project-code-image">
               <img
-                title="Chrome Extension"
                 alt="Chrome Extension"
                 src="./files/images/skills/chromeextension.png"
               />
@@ -367,7 +360,7 @@
       </section>
       <div class="main-dividing-line"></div>
     </main>
-    <footer id="contact" class="contact">
+    <footer id="contact" class="contact" aria-label="Contact" role="contentinfo">
       <h2>Contact</h2>
       <p>
         Feel free to contact me via email or visit my GitHub, LinkedIn, and
@@ -379,18 +372,19 @@
           <a
             href="mailto:hi@jamieburton.com"
             target="_top"
-            title="Email hi@jamieburton.com"
+            aria-label="Email hi@jamieburton"
           >
             hi@jamieburton.com
           </a>
         </p>
       </div>
       <div class="contact-social">
-        <h3>Online At</h3>
+        <h3 aria-label="Jamie's Other Websites">Online At</h3>
         <a
           href="https://github.com/jamieburtondev"
           target="_blank"
           rel="noreferrer"
+          aria-label="Go to Jamie Burton's GitHub"
         >
           <img
             title="Link to GitHub"
@@ -402,6 +396,7 @@
           href="https://www.linkedin.com/in/jamieburtondev/"
           target="_blank"
           rel="noreferrer"
+          aria-label="Go to Jamie Burton's LinkedIn"
         >
           <img
             title="Link to LinkedIn"
@@ -413,6 +408,7 @@
           href="https://vimeo.com/jamieburton"
           target="_blank"
           rel="noreferrer"
+          aria-label="Go to Jamie Burton's Vimeo"
         >
           <img
             title="Link to Vimeo"
