@@ -71,7 +71,7 @@ footer {
   display: none;
 }
 
-.off-screen {
+.skip-link, .off-screen {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -80,6 +80,22 @@ footer {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+.skip-link:focus {
+  font-size: 1.5rem;
+  background-color: white;
+  clip: auto;
+  clip-path: none;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  text-decoration: none;
+  top: 5px;
+  padding: 10px;
+  width: auto;
+  z-index: 1;
 }
 
 .project-image-holder {
