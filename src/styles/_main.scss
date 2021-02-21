@@ -71,7 +71,7 @@ footer {
   display: none;
 }
 
-.skip-link, .off-screen {
+.skip-content-link, .off-screen {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -82,7 +82,7 @@ footer {
   width: 1px;
 }
 
-.skip-link:focus {
+.skip-content-link:focus {
   font-size: 1.5rem;
   background-color: white;
   clip: auto;
