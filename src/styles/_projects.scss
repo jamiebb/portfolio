@@ -11,7 +11,7 @@
     margin-bottom: 0.5em;
   }
 
-  &-links {
+  &-links, &-intro {
     display: flex;
     justify-content: space-between;
     margin: 1em 0 3em;
@@ -23,6 +23,14 @@
         color: rgba(75, 136, 171, 0.8);
         cursor: pointer;
       }
+    }
+  }
+
+  &-intro {
+    margin-top: 1.5em;
+
+    a {
+      font-size: 1em;
     }
   }
 
@@ -67,6 +75,7 @@
   }
 }
 
+.project-intro,
 .project-description,
 .contact,
 .about-content {
